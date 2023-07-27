@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 750px;
+            border-collapse: collapse;
+        }
+
+        tr td {
+            border: 1px solid silver;
+        }
+
+        tr td,
+        tr th {
+            border: 1px solid silver;
+        }
+        tr th {
+            background-color: green;
+        }
+        col.t {
+            background-color: yellow;
+        }
+        .t2{
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>학생관리</caption>
+        <colgroup>
+            <col class="t">
+            <col>
+            <col class="t">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">번호</th>
+                <th scope="col">이름</th>
+                <th scope="col">나이</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>하나</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>둘</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>셋</td>
+                <td>33</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <table class="t2">
+        <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+            <td rowspan="3">5</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+</body>
+
+</html>
