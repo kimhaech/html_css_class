@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div:first-child{
+            border: 2px solid red;
+        } */
+        /* div:first-of-type {
+            background-color: green;
+        } */
+        p:nth-of-type(2n) {
+            background-color: green;
+        }
+        .test {
+            text-transform: capitalize;
+            text-decoration: underline;
+            line-height: 100px;
+            letter-spacing: 10px;
+            word-spacing: 10px;
+        }
+        .shadow {
+            color: red;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px darkslateblue,
+                10px 10px 1px black,
+                20px 20px 20px yellow;
+        }
+
+        #tb {
+            width: 1000px;
+            height: 500px;
+        }
+        #tb td {
+            border: 1px solid silver;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>div-1</div>
+    <p>p-1</p>
+    <div>div-2</div>
+    <p>p-2</p>
+    <div>div-3</div>
+    <p>p-3</p>
+    <div>div-4</div>
+    <p>p-4</p>
+    <div class="test">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, pariatur. Tenetur itaque impedit deserunt
+        laboriosam pariatur deleniti harum voluptate dolorem. Quibusdam facilis quia a sequi, doloribus maxime quas odio
+        quasi.
+    </div>
+    <div class="shadow">hello</div>
+
+    <table id="tb">
+        <tbody>
+            <tr><td>아무말이나 써보겠습니다.</td></tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
