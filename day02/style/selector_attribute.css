@@ -1,0 +1,36 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid blue;
+    float: left;
+    margin-right: 10px;
+}
+div.clear{
+    clear: both;
+}
+
+/* title이라는 속성을 가진 모두 - div[title] / title이라는 속성 값이 ~인 태그 - div[title="값"]*/
+div[title~="h1"] {
+    color: brown;
+    font-size: 12px;
+}
+a{
+    display: inline-block;
+    width: 100px;
+}
+
+
+a[href$="com"] {
+    color:red
+}
+
+a[href^="http"] {
+    border: 3px solid green;
+}
+
+a[href*="shinhansec"] {
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+}
