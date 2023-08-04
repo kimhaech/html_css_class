@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 400px;
+    height: 200px;
+}
+th,td {
+    border: 1px solid black;
+    text-align: center;
+}
+table th {
+    height: 60px;
+    border-bottom: 5px double black;
+    background-color: lightyellow;
+}
+
+#test {
+    display: flex;
+    flex-direction: row;
+
+    flex-grow: 1;
+}
+
+.content1, .content2, .content3, .content4 {
+    width: 400px; height: 400px;
+    border: 1px solid silver;
+}
+.content1 {
+    order: 3;
+}
+.content3 {
+    order: 2;
+}
+.content2 {
+    order: 1;
+}

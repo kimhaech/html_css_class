@@ -1,0 +1,18 @@
+/* @media screen {
+    body {
+        background-color: silver;
+    }
+
+    div {
+        border: 3px solid purple;
+    }
+}
+
+@media print {
+    div {
+        color: purple;
+    }
+} */
+
+@import url("print.css") print;
+@import url("screen.css") screen;
